@@ -4,7 +4,7 @@ sudo apt-get -y install build-essential
 sh nodesource_setup.sh
 apt-get -y install nodejs
 sudo npm install -g pm2
-cd /home/ubuntu/git/node-server
+cd /home/ubuntu/git/node-restapi
 pm2 start index.js
 pm2 startup systemd
 sudo su -c "env PATH=$PATH:/usr/bin pm2 startup systemd -u ubuntu --hp /home/ubuntu"
