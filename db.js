@@ -1,10 +1,10 @@
 var mysql = require('mysql');
 
 var db_config = {
-	host     : '127.0.0.1',
-	user     : 'root',
-	password : 'Aa123456',
-	database : 'restapi'
+	host     : '94.73.148.62',
+	user     : 'move',
+	password : 'Bxz82#e3',
+	database : 'themediamove'
 }
 
 var connection;
