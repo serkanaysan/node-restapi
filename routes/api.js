@@ -14,7 +14,7 @@ router.get('/get', function(req, res){
 	});
 });
 
-router.post('/post', function(req, res, next){
+router.post('/post', function(req, res){
 	db.query("Insert Into user (name, rank, available) Values (?, ?, ?)", [req.body.name, req.body.rank, req.body.available], function(err, result){
 		if(err){
 			return res.status(400).send('Insert Error: ' + err);
